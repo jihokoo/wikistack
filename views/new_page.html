@@ -1,0 +1,24 @@
+<!-- new_page.html -->
+{% extends "layout.html" %}
+
+{% block title %}Individual Page{% endblock %}
+
+{% block content %}
+
+
+<div class = "TJcontent">
+    <div class="container">
+      <div class="starter-template">
+        <h1>{{content.url_name}}</h1>
+        {{content.body|markdown}}
+      </div>
+      <button><a href="/wiki/{{content._id.valueOf()}}/edit">Edit</a></button>
+      <form action="/wiki/{{content._id.valueOf()}}/delete" method="POST"><input type="submit" value="Delete"></form>
+    </div><!-- /.container -->
+    <div>
+      <button><a href="/wiki/{{content._id.valueOf()}}/past_versions">Past Versions</a></button>
+    </div>
+  </div>
+{% endblock %}
+
+<!-- i need an edit button

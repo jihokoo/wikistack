@@ -1,0 +1,88 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <title>{% block title %}{% endblock %}</title>
+
+<!--    Core CSS from Nimit's
+-->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <style>
+
+    .TJcontent{
+    padding: 100px 100px;
+    }
+
+    #footer {
+    height: 100px;
+    position: absolute;
+    bottom: 200;
+    padding: 100px;
+    }
+    #small {
+      width: 350px;
+    }
+
+    #big {
+      width: 800px;
+      height: 350px;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+<a href="jasdkfladsjfkdsajfl">ajskldfjasdlfjsadlkjflkdsjf</a>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">WIKISTACK</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/wiki/add">ADD PAGE</a></li>
+            <li><a href="/wiki/login_page">Login</a></li>
+            <!-- <li><a href="/wiki/logout">Logout</a></li> -->
+          <!--  <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+
+
+
+<div id="footer">
+    <center><p> WikiStack, Fullstack Academy </p></center>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!-- new_page.html -->
+{% extends "layout.html" %}
+
+{% block title %}WikiStack - About Us{% endblock %}
+
+{% block content %}
+
+
+<div class = "TJcontent">
+    <div class="container">
+      <div class="starter-template">
+        <h1>{{content[0]["url_name"]}}</h1>
+        {% for doc in content %}
+        <a href="/wiki/{{doc.url_name}}/{{doc._id.valueOf()}}">{{doc.body|markdown}}</a>
+        {% endfor %}
+      </div>
+    </div><!-- /.container -->
+  </div>
+{% endblock %}
+
+<!-- i need an edit button
+<a href="/wiki/{{content["url_name"]}}/edit">
+

@@ -1,0 +1,19 @@
+<!-- new_page.html -->
+{% extends "layout.html" %}
+
+{% block title %}Past Versions{% endblock %}
+
+{% block content %}
+
+
+<div class = "TJcontent">
+    <div class="container">
+      <div class="starter-template">
+        <h1>{{content.url_name}}</h1>
+        {{content.body|markdown}}
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+<!-- i need an edit button
